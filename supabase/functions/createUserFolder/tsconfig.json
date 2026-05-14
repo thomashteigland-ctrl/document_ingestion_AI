@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "checkJs": false,
+      "noEmit": true,
+      "allowJs": true,
+      "types": []
+    },
+    "include": ["*.ts"]
+  }
+  

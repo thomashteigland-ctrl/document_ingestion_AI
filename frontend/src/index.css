@@ -1,0 +1,128 @@
+/* Tailwind base */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --------------------------
+   Root variables and fonts
+---------------------------*/
+:root {
+  --color-text-light: #111827;       /* dark text for light mode */
+  --color-text-dark: #000000;        /* light text for dark mode */
+  --color-bg-light: #f9f9f9;         /* page background for light mode */
+  --color-bg-dark: #1f2937;          /* page background for dark mode */
+  --color-link: #64e5ff;
+  --color-link-hover: #119ba7;
+  --color-button: #e0e0e0;
+  --color-button-hover: #119ba7;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --------------------------
+   Base elements
+---------------------------*/
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--color-button);
+  color: var(--color-text-light);
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s;
+}
+
+button:hover {
+  border-color: var(--color-button-hover);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* --------------------------
+   Dark mode support
+---------------------------*/
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-dark);
+  }
+
+  a {
+    color: var(--color-link);
+  }
+
+  a:hover {
+    color: var(--color-link-hover);
+  }
+
+  button {
+    background-color: #939496; /* darker button bg */
+    color: var(--color-text-dark);
+    border-color: transparent;
+  }
+
+  button:hover {
+    border-color: var(--color-link-hover);
+  }
+}
+
+/* --------------------------
+   Utility tweaks (optional)
+---------------------------*/
+input, textarea, select {
+  font-family: inherit;
+  font-size: 1rem;
+  color: inherit;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db; /* light gray border */
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--color-link);
+  box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.3);
+}

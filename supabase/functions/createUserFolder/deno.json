@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "lib": ["deno.ns", "deno.window", "esnext"],
+    "strict": true
+  },
+  "tasks": {
+    "dev": "deno run -A --watch index.ts"
+  }
+}

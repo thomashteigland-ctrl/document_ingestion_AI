@@ -1,0 +1,71 @@
+{
+    "PO Number": "PO1429546977775",
+    "Order Date": "13.09.2025",
+    "Delivery Date": "15.09.2025",
+    "Vendor": "Måkestad Engros AS",
+    "Line Items": [
+        {
+            "SKU": "6668966",
+            "Product Name": "CACTUS SOS POSE LITEN HVIT 1000STK",
+            "Quantity": "1.00",
+            "Units": "STK",
+            "Price": "499.90"
+        },
+        {
+            "SKU": "6700835",
+            "Product Name": "FATLAND KJØTTDEIG 21% CA2KG KG SALG",
+            "Quantity": "48.00",
+            "Units": "KG",
+            "Price": "114.07"
+        },
+        {
+            "SKU": "1456003",
+            "Product Name": "MISSION TORTILLA HVETE 30CM MF 4X18STK",
+            "Quantity": "4.00",
+            "Units": "KRT",
+            "Price": "342.99"
+        },
+        {
+            "SKU": "2474955",
+            "Product Name": "Q-MEIERIET Q LETTRØMME 2,5KG",
+            "Quantity": "15.00",
+            "Units": "STK",
+            "Price": "123.10"
+        },
+        {
+            "SKU": "1189737",
+            "Product Name": "SANTA MARIA PINTO BEANS 2550G",
+            "Quantity": "24.00",
+            "Units": "STK",
+            "Price": "80.74"
+        },
+        {
+            "SKU": "2066009",
+            "Product Name": "SVEINES MAISCORN 3KG",
+            "Quantity": "36.00",
+            "Units": "STK",
+            "Price": "64.65"
+        },
+        {
+            "SKU": "5306949",
+            "Product Name": "VESTFOLD FUGL Porsjonsfryst KYLLING LÅRKJØTT STRIMLET 2,5KG",
+            "Quantity": "8.00",
+            "Units": "STK",
+            "Price": "294.80"
+        },
+        {
+            "SKU": "5595814",
+            "Product Name": "PRIOR KYLLING KJØTTDEIG 2X2KG",
+            "Quantity": "18.00",
+            "Units": "STK",
+            "Price": "260.72"
+        },
+        {
+            "SKU": "1455971",
+            "Product Name": "MISSION HVETE TORTILLA 16,5CM MF 8X18STK",
+            "Quantity": "2.00",
+            "Units": "KRT",
+            "Price": "239.03"
+        }
+    ]
+}

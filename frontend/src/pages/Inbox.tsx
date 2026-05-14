@@ -87,7 +87,7 @@ export default function Inbox() {
     // [] "only run once when component loads"
     
     return (
-        <div className="p-6">
+        <div>
             <h1 className="text-2xl font-bold mb-4">Document Inbox</h1>
             
             {loading ? (

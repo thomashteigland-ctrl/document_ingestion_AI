@@ -14,17 +14,19 @@ export default function Sidebar() {
   }
 
   return (
-    <div className="flex flex-col justify-between w-60 bg-gray-800 text-white min-h-screen p-4">
-      {/* Top section: Menu */}
+    <aside className="flex min-h-screen w-64 shrink-0 flex-col justify-between border-r border-slate-700 bg-slate-900 p-4 text-slate-100 shadow-lg">
       <div>
-        <h2 className="text-xl font-bold mb-6">Menu</h2>
-        <nav className="flex flex-col gap-3">
+        <p className="mb-1 text-[10px] font-semibold uppercase tracking-wider text-slate-400">
+          Analysis Platform
+        </p>
+        <h2 className="mb-6 text-xl font-bold text-white">Menu</h2>
+        <nav className="flex flex-col gap-1">
           <NavLink
             to="inbox"
             className={({ isActive }) =>
               isActive
-                ? 'bg-gray-700 p-2 rounded'
-                : 'hover:bg-gray-700 p-2 rounded'
+                ? 'rounded-lg bg-white/15 px-3 py-2 text-sm font-medium text-white'
+                : 'rounded-lg px-3 py-2 text-sm font-medium text-slate-300 hover:bg-white/5 hover:text-white'
             }
           >
             Inbox
@@ -34,8 +36,8 @@ export default function Sidebar() {
             to="drag-drop"
             className={({ isActive }) =>
               isActive
-                ? 'bg-gray-700 p-2 rounded'
-                : 'hover:bg-gray-700 p-2 rounded'
+                ? 'rounded-lg bg-white/15 px-3 py-2 text-sm font-medium text-white'
+                : 'rounded-lg px-3 py-2 text-sm font-medium text-slate-300 hover:bg-white/5 hover:text-white'
             }
           >
             Upload
@@ -45,8 +47,8 @@ export default function Sidebar() {
             to="usage"
             className={({ isActive }) =>
               isActive
-                ? 'bg-gray-700 p-2 rounded'
-                : 'hover:bg-gray-700 p-2 rounded'
+                ? 'rounded-lg bg-white/15 px-3 py-2 text-sm font-medium text-white'
+                : 'rounded-lg px-3 py-2 text-sm font-medium text-slate-300 hover:bg-white/5 hover:text-white'
             }
           >
             Usage
@@ -56,8 +58,8 @@ export default function Sidebar() {
             to="schema-editor"
             className={({ isActive }) =>
               isActive
-                ? 'bg-gray-700 p-2 rounded'
-                : 'hover:bg-gray-700 p-2 rounded'
+                ? 'rounded-lg bg-white/15 px-3 py-2 text-sm font-medium text-white'
+                : 'rounded-lg px-3 py-2 text-sm font-medium text-slate-300 hover:bg-white/5 hover:text-white'
             }
           >
             Schema Editor
@@ -65,15 +67,15 @@ export default function Sidebar() {
         </nav>
       </div>
 
-      {/* Bottom section: Sign out button */}
-      <div className="mt-6 border-t border-gray-700 pt-4">
+      <div className="mt-8 border-t border-slate-700 pt-4">
         <button
+          type="button"
           onClick={handleSignOut}
-          className="w-full py-2 text-center bg-red-600 hover:bg-red-700 rounded transition-colors"
+          className="w-full rounded-lg bg-red-600 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition-colors hover:bg-red-700"
         >
           Sign Out
         </button>
       </div>
-    </div>
+    </aside>
   )
 }
